@@ -17,8 +17,9 @@ Base on the image below it seems as though the command 'uname -a' is simply disp
 ### Initial inspection of the commands
 #### Part 1.
 ##### Initial inspection of the commands
-  - Well based on past experience I know that the 'cd ~' command brings you to the home directory.
-  - 
+  - Well based on past experience I know that the 'cd ~' command brings you to the home directory, so if I was in another directory and used this command I would see that I am brought back to the home directory.
+  - It would seem that 'pwd' is the command for displaying what the current directory is.
+  - The mkdir command creates a new directory, so when you use this command you create multiple directories.
 #### Part 2.
 Well based on the emphasis on manual, I am going to say that this is a reference to man pages or running 'man [command]' to learn more about a specific command in the terminal.
 #### Part 3
