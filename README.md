@@ -5,7 +5,7 @@ The main goal of this assignment and in turn this Readme is to familiarize mysel
 * Done!
 ****
 ## Task #2
- * The three sites that I have chosen are [Computer Vision Recipes](https://github.com/microsoft/computervision-recipes), [Github Readme Stats](https://github.com/anuraghazra/github-readme-stats), and [Piskel](https://github.com/piskelapp/piskel). 
+ * The three repo Readmes that I have chosen are [Computer Vision Recipes](https://github.com/microsoft/computervision-recipes), [Github Readme Stats](https://github.com/anuraghazra/github-readme-stats), and [Piskel](https://github.com/piskelapp/piskel). 
  * These three repos have several things in common, the first one that is the most obvious is a well written general overview of their repository. The second similarity is a section on how to implement/setup the application or code in the repo. Lastly there is a section on how to contribute to the project as well as licensing.
  ****
 ## Task #3
