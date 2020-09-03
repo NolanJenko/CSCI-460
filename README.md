@@ -39,3 +39,16 @@ Well based on the emphasis on manual, I am going to say that this is a reference
 I would say scapy is my favorite tool I don't know if it counts as it is not a native tool, but is fun to use as it allows you to manipulate/monitor packets. Such as capturing them, or tracing their path. For a more native tool I would say that cat is my favorite as it is very useful to be able to print out a file quickly without actually using a text editor like vim or emacs.
 ## Task #5
 
+
+## Task #7
+    '''ls
+    ==1786== 
+    ==1786== HEAP SUMMARY:
+    ==1786==     in use at exit: 0 bytes in 0 blocks
+    ==1786==   total heap usage: 102 allocs, 102 frees, 6,442 bytes allocated
+    ==1786==
+    ==1786== All heap blocks were freed -- no leaks are possible
+    ==1786==
+    ==1786== For counts of detected and suppressed errors, rerun with: -v
+    ==1786== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+    '''
