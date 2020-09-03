@@ -41,7 +41,6 @@ I would say scapy is my favorite tool I don't know if it counts as it is not a n
 
 
 ## Task #7
-    '''ls
     ==1786== 
     ==1786== HEAP SUMMARY:
     ==1786==     in use at exit: 0 bytes in 0 blocks
@@ -51,4 +50,3 @@ I would say scapy is my favorite tool I don't know if it counts as it is not a n
     ==1786==
     ==1786== For counts of detected and suppressed errors, rerun with: -v
     ==1786== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-    '''
