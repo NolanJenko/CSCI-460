@@ -1,5 +1,5 @@
 # CSCI-460 PA0
-The main goal of this assignment and in turn this Readme is to familiarize myself with some of the tools that will be used in CSCi 460. Such as using markdown to write this and the basics of commands in vagrant.
+The main goal of this assignment and in turn this Readme is to familiarize myself with some of the tools that will be used in CSCi 460. Such as using markdown to write this and the basics of commands in vagrant. As well as re-familiarize myself with c, such as the use of makesfiles and debugging.
 ****
 ## Task #1
 * Done!
@@ -17,17 +17,18 @@ Base on the image below it seems as though the command 'uname -a' is simply disp
 ### Initial inspection of the commands
 #### Part 1.
 ##### Initial inspection of the commands
-  - Well based on past experience I know that the 'cd ~' command brings you to the home directory, so if I was in another directory and used this command I would see that I am brought back to the home directory.
-  - It would seem that 'pwd' is the command for displaying what the current directory path is.
-  - The mkdir command seems to creates a new directories, so when you use 'mkdir -p /tmp/this/is/a/sub/directory' this command creates multiple directories.
+  - Well based on past experience I know that the ```cd ~``` command brings you to the home directory, so if I was in another directory and used this command I would see that I am brought back to the home directory.
+  - It would seem that ```pwd``` is the command for displaying what the current directory path is.
+  - The mkdir command seems to creates a new directories, so when you use ```mkdir -p /tmp/this/is/a/sub/directory``` this command creates multiple directories.
   -  
-  - 'ls -al' seems to print out all the files and directories in the current directory along with their permissions and when they were last modified.
-  - 
-  - 'curl -O https://raw.githubusercontent.com/traviswpeters/cs460-code/master/week02/info' seems as though it is doing an http request to the specified url and storing that file. 
-  - 'cat info' is printing the contents of 'info' to the standard output of the command line. I have used this before so I am fairly confident in my assertion.
-  - 
+  - ```ls -al``` seems to print out all the files and directories in the current directory along with their permissions and when they were last modified.
+  -  ```env grep | PATH``` seems based on the names of the commands to output the environment path, however I do not know what grep is doing.
+  
+  - ```curl -O https://raw.githubusercontent.com/traviswpeters/cs460-code/master/week02/info``` seems as though it is doing an http request to the specified url and storing that file. 
+  - ```cat info``` is printing the contents of 'info' to the standard output of the command line. I have used this before so I am fairly confident in my assertion.
+  - ```sudo lshw -html > hardwareinfo.html```
 #### Commands after research
-  - My initial intuition was correct as 'cd ~' does bring you to the home directory.
+  - My initial intuition was correct as ```cd ~``` does bring you to the home directory.
   - Initial inspection again was correct
   - &darr; &darr;
   - 
@@ -37,16 +38,32 @@ Base on the image below it seems as though the command 'uname -a' is simply disp
 Well based on the emphasis on manual, I am going to say that this is a reference to man pages or running 'man [command]' to learn more about a specific command in the terminal.
 #### Part 3
 I would say scapy is my favorite tool I don't know if it counts as it is not a native tool, but is fun to use as it allows you to manipulate/monitor packets. Such as capturing them, or tracing their path. For a more native tool I would say that cat is my favorite as it is very useful to be able to print out a file quickly without actually using a text editor like vim or emacs.
+
 ## Task #5
 
-
+## Task #6 
+```c
+void freeAllNodes(struct listnode *head)
+{
+    struct listnode *current = head;
+    struct listnode *next;
+    while(current != NULL){
+        next = current->next;
+        freeNode(&current);
+        current = next;
+    }
+}
+```
+The code above is the ```freeAllNodes``` function for the stategame. So to free all the nodes in the sorted linked list I first created two variables ```current``` and ```next``` of type listnode. Then a while loop is used where ```next``` is set to the next node in the list and ```current``` which is the node to be deleted is given to the provided function ```freeNode```. Then ```current``` is set to the next node stored in ```next``` and the loop continues until all nodes are freed and set to null.
 ## Task #7
-    ==1786== 
-    ==1786== HEAP SUMMARY:
-    ==1786==     in use at exit: 0 bytes in 0 blocks
-    ==1786==   total heap usage: 102 allocs, 102 frees, 6,442 bytes allocated
-    ==1786==
-    ==1786== All heap blocks were freed -- no leaks are possible
-    ==1786==
-    ==1786== For counts of detected and suppressed errors, rerun with: -v
-    ==1786== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```bash
+==1786== 
+==1786== HEAP SUMMARY:
+==1786==     in use at exit: 0 bytes in 0 blocks
+==1786==   total heap usage: 102 allocs, 102 frees, 6,442 bytes allocated
+==1786==
+==1786== All heap blocks were freed -- no leaks are possible
+==1786==
+==1786== For counts of detected and suppressed errors, rerun with: -v
+==1786== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
