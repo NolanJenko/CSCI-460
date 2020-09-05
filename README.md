@@ -89,3 +89,5 @@ Here are my commands for debugging stategame and the first thing I need to do wa
 ==1786== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 ```
 As you can see from my valgrind output my solution for task 6 did exactly as was intended as I got 102 allocations and 102 frees. So all of the nodes were freed correctly.
+## Task #8
+I got the private repo.
